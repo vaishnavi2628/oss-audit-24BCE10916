@@ -87,13 +87,53 @@ Open the terminal on your system.
 ```bash
 cd oss-audit
 chmod +x *.sh
-### run the  scripts
+Step 3: Give Execution Permission
+chmod +x *.sh
+Step 4: Run Each Script
+Script 1:
 ./script1.sh
+Script 2:
 ./script2.sh
+Script 3:
 ./script3.sh
+Script 4:
 ./script4.sh /var/log/system.log
+If error occurs:
 ./script4.sh /var/log/install.log
+Script 5:
 ./script5.sh
- 
+Step 5: View Output
+Output will be displayed in the terminal.
+Some scripts may generate output files like manifesto.txt.
+Flow of Execution
+Open terminal and navigate to the project directory using cd.
+Give execution permission using chmod +x *.sh.
+Run scripts one by one in sequence.
+Each script performs a specific task:
+Script 1 shows system information
+Script 2 checks installed package
+Script 3 audits directories
+Script 4 analyzes log file
+Script 5 generates user-based output
+Outputs are displayed in the terminal or saved in files.
 
 
+Dependencies
+Required:
+bash shell
+uname
+whoami
+uptime
+date
+ls
+du
+grep
+cat
+Optional:
+VLC Media Player (for testing script2)
+
+Scripts tested on macOS/Linux systems.
+Make sure execution permission is granted before running.
+File paths may vary depending on system configuration.
+Conclusion
+This project demonstrates practical shell scripting and understanding of open-source tools. It helped in learning Linux commands, automation, and the philosophy of open-source software.
